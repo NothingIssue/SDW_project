@@ -39,6 +39,7 @@ class Library:
         self.patrons = []
         self.borrowed_books = {}
         self.current_patron = None
+        self.Cost=0
         self.load_books()
         self.load_patrons()
         self.load_borrowed_books()
@@ -251,7 +252,7 @@ class Library:
             if patron_id in self.borrowed_books:
                 for book in self.borrowed_books[patron_id]:
                     if book.due_date and book.due_date < datetime.now():
-                        for i in range(0,datetime.now()-book.due_date ):
+                        for i in range(0,(datetime.now()-book.due_date).days):
                             self.Cost= 100 + self.Cost 
                         print("you have recived a fine ")
                         print(f" |Book ID:  |{book.book_id},  |Title: {book.title},  |Cost: {self.Cost},  |Due Date: {book.due_date.strftime('%Y-%m-%d')}")
