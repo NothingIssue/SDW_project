@@ -1,5 +1,3 @@
 patron_id,name,email,password,role
-1,A,A@001,A001,admin
-2,B,B@002,B002,patron
 3,C,C@003,64604487c74ef2fb0aca58ed3e951aacc1f537baf96c023b75441012e4b92880,patron
 4,D,D@004,4275e4cc5493b63777f123090b7b7a3da3392a02a4f7bb2c7276d94a6ac8d839,admin
