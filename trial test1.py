@@ -177,7 +177,7 @@ class Library:
         if found_books:
             print("\nSearch Results:")
             for book in found_books:
-                print(f"  |ID: {book.book_id},  |Title: {book.title},  |Author: {book.author},  |cost: {book.cost},  |Quantity: {book.quantity}")
+                print(f"  |ID: {book.book_id},  |Title: {book.title},  |Author: {book.author},  |Cost: {book.Cost},  |Quantity: {book.quantity}")
         else:
             print("No books found with the given title.")
 
@@ -384,7 +384,7 @@ def main():
                         title = input("Enter Title: ")
                         author = input("Enter Author: ")
                         quantity = int(input("Enter Quantity: "))
-                        Cost = int(input("enter the cost of the book"))
+                        Cost = int(input("enter the Cost of the book"))
                         publication_year = input("Enter Publication Year: ")
                         review = input("enter review of the book")
                         book = Book(book_id, title, author, quantity, Cost,publication_year,review)
